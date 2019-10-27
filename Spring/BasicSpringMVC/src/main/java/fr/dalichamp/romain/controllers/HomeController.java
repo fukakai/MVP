@@ -12,7 +12,7 @@ public class HomeController {
 
     @RequestMapping(method = RequestMethod.GET,path = "/")
     public String homePage(ModelMap mm){
-        mm.addAttribute("title","Welcome Dude !");
+        mm.addAttribute("title","Squad Alithya !");
         return HOME_PAGE;
     }
 }

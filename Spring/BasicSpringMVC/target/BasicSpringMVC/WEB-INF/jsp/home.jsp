@@ -11,6 +11,7 @@
         <title>${title}</title>
     </head>
     <body>
-        <h2>JSP: ${title}</h2>
+        <img src="images/alithya.jpg"/>
+        <h2>${title}</h2>
     </body>
 </html>
