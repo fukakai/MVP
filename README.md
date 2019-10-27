@@ -1,2 +1,1 @@
-# MVP
-Minimum Viable Product
+# Minimum Viable Products
