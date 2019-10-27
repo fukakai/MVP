@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "49905472301",
+    "firebase_url": "https://backpackerbudget-1337.firebaseio.com",
+    "project_id": "backpackerbudget-1337",
+    "storage_bucket": "backpackerbudget-1337.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49905472301:android:b403ed6500671246",
+        "android_client_info": {
+          "package_name": "com.backpackerb.backpackerbudget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49905472301-270d1515fj7u5sr741g09v3mnijk9pm2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.backpackerb.backpackerbudget",
+            "certificate_hash": "11a9f9c714de5fc07c36c646a338b6095feaf1fc"
+          }
+        },
+        {
+          "client_id": "49905472301-6kkodtsa4m3pnf0ekki3kil4j188or9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-ZRglKX1sIJOBpbx67HeX1S7YKEjUMdc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49905472301-6kkodtsa4m3pnf0ekki3kil4j188or9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

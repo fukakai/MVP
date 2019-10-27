@@ -1,0 +1,42 @@
+
+Bcom.backpackerb.backpackerbudget.view.LoginActivity#checkFields()Zâ
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaÖ Ö("4*¶
+2â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaä ä("î
+â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaä ä(
+""*ñ
+4â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaÜ Ü(˚
+¯
+â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaÜ* Ü(9
+%0java.lang.String"__id*L*J5
+3com.backpackerb.backpackerbudget.view.LoginActivity"
+mEmailFieldText˛
+˚
+â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaá. á(@
+%1java.lang.String"__id*O*M5
+3com.backpackerb.backpackerbudget.view.LoginActivity"
+mPasswordFieldText*
+2
+1*‰
+1â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaå å(Ÿ÷
+â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaå å(%
+
+%2void"Wcom.backpackerb.backpackerbudget.view.LoginActivity#setEmailError(Ljava/lang/Boolean;)V*75
+3com.backpackerb.backpackerbudget.view.LoginActivity*
+""2"setEmailError(Ljava/lang/Boolean;)ﬂ‹
+â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaç ç(+
+
+%3void"Zcom.backpackerb.backpackerbudget.view.LoginActivity#setPasswordError(Ljava/lang/Boolean;)V*75
+3com.backpackerb.backpackerbudget.view.LoginActivity*
+""2%setPasswordError(Ljava/lang/Boolean;)"î
+â
+}C:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\LoginActivity.javaé é(
+""B75
+3com.backpackerb.backpackerbudget.view.LoginActivity

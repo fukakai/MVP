@@ -1,0 +1,34 @@
+
+Kcom.backpackerb.backpackerbudget.model.User#getFullName()Ljava/lang/String;
+uC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\model\User.javaJ J("1*£
+
+1
+uC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\model\User.javaK K(«¨
+
+uC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\model\User.javaK K(
+%0java.lang.String"Lcom.backpackerb.backpackerbudget.model.User#getFirstname()Ljava/lang/String;*/-
++com.backpackerb.backpackerbudget.model.User2getFirstname()Ç
+Ä
+
+uC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\model\User.javaK K(#
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+ ©¦
+
+uC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\model\User.javaK& K(3
+%2java.lang.String"Kcom.backpackerb.backpackerbudget.model.User#getLastname()Ljava/lang/String;*/-
++com.backpackerb.backpackerbudget.model.User2getLastname()Ú
+×
+
+uC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\model\User.javaK K(3
+%3java.lang.String"__concat*
+
+%1java.lang.String*
+
+%2java.lang.String"›
+
+uC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\model\User.javaK K(4
+
+%3java.lang.StringB/-
++com.backpackerb.backpackerbudget.model.User

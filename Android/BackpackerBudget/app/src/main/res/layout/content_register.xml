@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.RegisterActivity"
+    android:focusableInTouchMode="true"
+    tools:showIn="@layout/activity_register">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutRegisterEmailAdress"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        app:errorEnabled="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/layoutRegisterFirstname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/registerEmailAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutRegisterFirstname"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        app:errorEnabled="true"
+        android:layout_margin="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutRegisterEmailAdress" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/registerFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Firstname"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutRegisterLastname"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        app:errorEnabled="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutRegisterFirstname" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/registerLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lastname"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutRegisterPassword1"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        app:errorEnabled="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutRegisterLastname"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/registerPassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutRegisterPassword2"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        app:errorEnabled="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutRegisterPassword1"
+        app:passwordToggleEnabled="true" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/registerPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-enter Your Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/mRegisterButton"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Register And Login"
+        android:background="@drawable/bouton_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:stateListAnimator="@null"
+        app:layout_constraintTop_toBottomOf="@+id/layoutRegisterPassword2" />
+
+    <include layout="@layout/progress_circle" />
+
+</android.support.constraint.ConstraintLayout>

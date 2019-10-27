@@ -1,0 +1,7 @@
+organization=romain-dalichamp
+projectKey=backpackerbudget
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.617
+dashboardUrl=https://sonarcloud.io/dashboard?id=backpackerbudget
+ceTaskId=AW0srCbbYuJ5x3KjMRSp
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AW0srCbbYuJ5x3KjMRSp

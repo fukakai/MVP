@@ -1,0 +1,55 @@
+
+Ycom.backpackerb.backpackerbudget.view.AddProjectActivity#checkFields()Ljava/lang/Boolean;ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java; ;("3*Æ
+2ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java?% ?()"ò
+ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java? ?(*
+""*î	
+3ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java< <(&Ú
+Ô
+ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java< <(;O:
+8com.backpackerb.backpackerbudget.view.AddProjectActivity"
+mAddProjectText"__id*
+""Ñ
+Å
+ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java=0 =(?
+%0java.lang.String"__id*Q*O:
+8com.backpackerb.backpackerbudget.view.AddProjectActivity"
+mAddProjectTextÚ
+Ô
+ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java= =(@O:
+8com.backpackerb.backpackerbudget.view.AddProjectActivity"
+addProjectError"__id*
+""Ö
+Ç
+ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java? ?(
+%1java.lang.Boolean"__id*Q*O:
+8com.backpackerb.backpackerbudget.view.AddProjectActivity"
+addProjectError*
+2
+1*ª
+1ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java?2 ?(3Ö
+Ç
+ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java@ @(-
+%2java.lang.Boolean"__id*Q*O:
+8com.backpackerb.backpackerbudget.view.AddProjectActivity"
+addProjectErrorÇˇ
+ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.java@ @(.
+
+%3void"`com.backpackerb.backpackerbudget.view.AddProjectActivity#setLayoutAddTitle(Ljava/lang/Boolean;)V*<:
+8com.backpackerb.backpackerbudget.view.AddProjectActivity*
+
+%2java.lang.Boolean2&setLayoutAddTitle(Ljava/lang/Boolean;)"ò
+ç
+ÇC:\Users\Romain\eclipse-workspace\BackpackerBudget\app\src\main\java\com\backpackerb\backpackerbudget\view\AddProjectActivity.javaA A(
+""B<:
+8com.backpackerb.backpackerbudget.view.AddProjectActivity
