@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUserActivity">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Nom" android:id="@+id/userName"
+            tools:text="@tools:sample/last_names"
+            android:text="dalichamp"/>
+
+        <EditText
+            android:id="@+id/userFirstName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prenom"
+            tools:text="@tools:sample/first_names"
+            android:text="Romain"/>
+
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Email" android:id="@+id/userMail"
+            android:text="fukakai@msn.com"/>
+
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Telephone"
+            android:id="@+id/userPhone"
+            tools:text="@tools:sample/us_phones"
+            android:text="0613943685" />
+
+        <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="Ajouter cet utilisateur"
+            android:id="@+id/addUserNow" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
