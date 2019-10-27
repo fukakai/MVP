@@ -6,12 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping
 public class HomeController {
+    private static final String HOME_PAGE = "home";
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET,path = "/")
     public String homePage(ModelMap mm){
-        mm.addAttribute("title","Hello World !");
-        return "index";
+        mm.addAttribute("title","Welcome Dude !");
+        return HOME_PAGE;
     }
 }
