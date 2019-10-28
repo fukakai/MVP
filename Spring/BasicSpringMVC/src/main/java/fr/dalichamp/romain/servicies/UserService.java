@@ -1,21 +1,39 @@
 package fr.dalichamp.romain.servicies;
 
-import fr.dalichamp.romain.entities.User;
+import fr.dalichamp.romain.entities.aUser;
 import fr.dalichamp.romain.repositories.UserRepository;
+import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @Service
 public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public List<User> getUserList(){
+    /* Get User List */
+    public List<aUser> getUserList(){
         return userRepository.findAll();
+    }
+
+    /* Add User */
+    public boolean addUser(aUser user){
+        try{
+            userRepository.save(user);
+        }catch(Exception e){
+            return false;
+        }
+        return true;
+    }
+
+    /* Delete User */
+    public boolean delUser(Long id){
+        try{
+            userRepository.deleteById(id);
+        }catch (Exception e){
+            return false;
+        }
+        return true;
     }
 }

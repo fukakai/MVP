@@ -13,5 +13,6 @@
     <body>
         <img src="images/alithya.jpg"/>
         <h2>${title}</h2>
+        <a href="/userList">List of Users</a>
     </body>
 </html>
