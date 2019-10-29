@@ -33,6 +33,7 @@
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,11 +55,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\clguigue\workspace\BasicSpringMVC\src\main\webapp\Resources\css" />
       <recent name="C:\Users\clguigue\workspace\BasicSpringMVC\src\main\webapp" />
       <recent name="C:\Users\clguigue\workspace\BasicSpringMVC\src\main\Resources\images" />
     </key>
@@ -162,7 +165,8 @@
       <option name="presentableId" value="Default" />
       <updated>1572192666043</updated>
       <workItem from="1572192668136" duration="7132000" />
-      <workItem from="1572265545490" duration="22398000" />
+      <workItem from="1572265545490" duration="22533000" />
+      <workItem from="1572357390362" duration="3826000" />
     </task>
     <servers />
   </component>

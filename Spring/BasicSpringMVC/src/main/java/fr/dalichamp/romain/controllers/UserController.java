@@ -8,11 +8,10 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 @Controller
 public class UserController {
-    private static final String USERLIST_PAGE = "/userList";
+    private static final String USERLIST_PAGE = "userlist";
+
     @Autowired
     private UserService userService;
 
