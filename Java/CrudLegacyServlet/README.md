@@ -1,5 +1,5 @@
 # Crud Legacy Servlet
-# /!\Add JavaEE 6 as Jar Depencies /!\
+/!\Add JavaEE 6 as Jar Depencies /!\
 
 ![alt text](https://github.com/fukakai/MVPs/blob/master/Java/CrudLegacyServlet/src/main/webapp/images/screen.png)
 
