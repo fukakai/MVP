@@ -9,14 +9,14 @@ Maven Dependencies:
 * JSTL
 * TagLibs
 
-Files Types:
+# Files Types:
 * Java
 * JSP
 * SQL
 * Css
 * Jpg
 
-= Application Story =
+#Application Story
 1. Home Page
 2. Init H2 embedded tabase
 2. UserList Page
