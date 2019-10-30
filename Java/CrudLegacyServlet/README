@@ -1,3 +1,5 @@
+/!\Add JavaEE 6 as Jar Depencies /!\
+
 Maven Dependencies:
 * Hibernate Entity Manager
 * Hibernate Tools
