@@ -1,9 +1,10 @@
-package fr.dalichamp.trainingcrud.service;
+package fr.dalichamp.trainingcrud.controllers;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,15 +14,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import fr.dalichamp.trainingcrud.controllers.BookController;
+import fr.dalichamp.trainingcrud.service.BookService;
 import fr.dalichamp.trainingcrud.entities.Book;
 
-@Service
+@Controller
 @RestController
-public class LibraryService {
+public class LibraryController {
 
 	@Autowired
-	BookController useLibrary;
+	BookService useLibrary;
 	
 	@GetMapping("/")
 	public String welcome() {

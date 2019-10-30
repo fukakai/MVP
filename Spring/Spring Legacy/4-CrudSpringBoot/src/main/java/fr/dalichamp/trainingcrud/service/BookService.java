@@ -1,16 +1,15 @@
-package fr.dalichamp.trainingcrud.controllers;
+package fr.dalichamp.trainingcrud.service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import fr.dalichamp.trainingcrud.entities.Book;
 import fr.dalichamp.trainingcrud.repositories.BookRepository;
+import org.springframework.stereotype.Service;
 
-@Component
-public class BookController {
+@Service
+public class BookService {
 	
 	@Autowired
 	BookRepository library;

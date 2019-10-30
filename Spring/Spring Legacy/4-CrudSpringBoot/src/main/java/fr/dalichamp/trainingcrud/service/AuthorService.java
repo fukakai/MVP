@@ -1,16 +1,16 @@
-package fr.dalichamp.trainingcrud.controllers;
+package fr.dalichamp.trainingcrud.service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import fr.dalichamp.trainingcrud.entities.Author;
 import fr.dalichamp.trainingcrud.repositories.AuthorRepository;
+import org.springframework.stereotype.Service;
 
-@Component
-public class AuthorController {
+@Service
+public class AuthorService {
 	
 	@Autowired
 	AuthorRepository registry;
