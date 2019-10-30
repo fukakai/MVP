@@ -1,0 +1,33 @@
+body{
+    background-color: lightgrey;
+}
+
+#imageAlithya img{
+    margin: 0 auto;
+    display: block;
+    border: 3px solid white;
+}
+
+#imageAlithya{
+    text-align: center;
+    color: white;
+}
+
+#addTable{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#addTable h2{
+    color: dimgrey;
+}
+
+.tableArea{
+    width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    color: dimgrey;
+}
+.tableArea th{
+    text-align: left;
+}
