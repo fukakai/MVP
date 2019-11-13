@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Squad Junior:
+# Installed Modules:
 - Get Started
     - https://fr.reactjs.org/docs/create-a-new-react-app.html
     - https://redux.js.org/introduction/getting-started
