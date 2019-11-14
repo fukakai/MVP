@@ -8,6 +8,8 @@ import Row from 'react-bootstrap/Row';
 
 import './App.css';
 //https://www.eventbriteapi.com/v3/events/search/?categories=101&location.address=montreal&token=QGRJ66VYMM7DYBSXEQQ3
+//https://www.w3schools.com/react/react_forms.asp
+//https://react-bootstrap.netlify.com/components/forms/
 function App() {
   return (
     <div className="App">
