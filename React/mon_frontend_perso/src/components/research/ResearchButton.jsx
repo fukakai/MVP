@@ -7,7 +7,7 @@ class ResearchButton extends React.Component {
     render() {
         return <Col>
                     <Form.Group>
-                        <Button type="submit" class="">Submit</Button>
+                        <Button type="submit">Search</Button>
                     </Form.Group>
                 </Col>
     }

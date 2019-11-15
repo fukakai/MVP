@@ -9,13 +9,14 @@ class ResearchDistance extends React.Component {
             distances : [10, 20, 30,40,50,60,70,80,90,100]
         }
     }
+
     render() {
         return (<Col>
             <Form.Group>
-                <Form.Label class="text-white">Distance (kms):</Form.Label>
-                <Form.Control as="select">
+                <Form.Label className="text-white">Distance (kms):</Form.Label>
+                <Form.Control as="select" name="distance">
                     {this.state.distances.map((value, index) => {
-                        return <option key={index}>{value}</option>
+                        return <option key={index} value={value}>{value}</option>
                     })}
                 </Form.Control>
             </Form.Group>
