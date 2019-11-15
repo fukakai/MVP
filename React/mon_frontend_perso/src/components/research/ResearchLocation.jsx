@@ -6,15 +6,15 @@ class ResearchRegion extends React.Component {
     constructor(props){
         super(props)
         this.state ={ //setting default filter values
-            regions : ['Montreal','Toronto','Quebec']
+            locations : ['Montreal','Toronto','Quebec']
         }
     }
     render() {
         return <Col>
             <Form.Group>
-                <Form.Label class="text-white">Region :</Form.Label>
-                <Form.Control as="select" selected={this.state.distance}>
-                    {this.state.regions.map((value, index) => {
+                <Form.Label className="text-white">Region :</Form.Label>
+                <Form.Control as="select" name="location">
+                    {this.state.locations.map((value, index) => {
                         return <option key={index}>{value}</option>
                     })}
                 </Form.Control>
