@@ -1,0 +1,16 @@
+
+V
+squid:S106J"9Replace this use of System.out or System.err by a logger.(†½”λ8α’ύθ-
+½%squid:RedundantThrowsDeclarationCheck-"„Remove the declaration of thrown exception 'org.springframework.security.core.AuthenticationException' which is a runtime exception.(οΑ8α’ύθ-
+jsquid:S00112?"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ8α’ύθ-
+[
+squid:S1069"9Replace this use of System.out or System.err by a logger.(ρόχβωÿÿÿÿ8α’ύθ-
+[
+squid:S106I"9Replace this use of System.out or System.err by a logger.(Ϋ’Ηόÿÿÿÿ8α’ύθ-
+Dsquid:S1659^"&Declare "password" on a separate line.(ΈκΙτ8α’ύθ-
+[
+squid:S106:"9Replace this use of System.out or System.err by a logger.(¦ÿ¶Τϊÿÿÿÿ8α’ύθ-
+V
+squid:S1064"9Replace this use of System.out or System.err by a logger.(Ή»“¦8α’ύθ-
+[
+squid:S1065"9Replace this use of System.out or System.err by a logger.(¶®ιΣψÿÿÿÿ8α’ύθ-

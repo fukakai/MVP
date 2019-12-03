@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringEurekaAuth/SpringEurekaAuth.iml" filepath="$PROJECT_DIR$/SpringEurekaAuth/SpringEurekaAuth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEurekaCommon/SpringEurekaCommon.iml" filepath="$PROJECT_DIR$/SpringEurekaCommon/SpringEurekaCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEurekaGallery/SpringEurekaGallery.iml" filepath="$PROJECT_DIR$/SpringEurekaGallery/SpringEurekaGallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEurekaImage/SpringEurekaImage.iml" filepath="$PROJECT_DIR$/SpringEurekaImage/SpringEurekaImage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEurekaServer/SpringEurekaServer.iml" filepath="$PROJECT_DIR$/SpringEurekaServer/SpringEurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEurekaZuul/SpringEurekaZuul.iml" filepath="$PROJECT_DIR$/SpringEurekaZuul/SpringEurekaZuul.iml" />
+    </modules>
+  </component>
+</project>
