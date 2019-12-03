@@ -24,7 +24,30 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-vault-config</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.pivotal.spring.cloud/spring-cloud-vault-spring-connector -->
+		<dependency>
+			<groupId>io.pivotal.spring.cloud</groupId>
+			<artifactId>spring-cloud-vault-spring-connector</artifactId>
+			<version>2.0.1.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.pivotal.spring.cloud/spring-cloud-vault-cloudfoundry-connector -->
+		<dependency>
+			<groupId>io.pivotal.spring.cloud</groupId>
+			<artifactId>spring-cloud-vault-cloudfoundry-connector</artifactId>
+			<version>2.0.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.10</version>
+		</dependency>
 
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

@@ -1,0 +1,56 @@
+# The spring.cloud.vault.uri property points to Vault's API address.
+#   Since our test environment uses HTTPS with a self-signed certificate.
+#  we also need to provide a keystore containing its public key.
+# Note that this userVault has no authentication data.
+#   For the simplest case, where we use a fixed token,
+#   we can pass it through the system property spring.cloud.vault.token
+#   or an environment variable. This approach works well in conjunction with
+#   standard cloud userVault mechanisms, such as Kubernetes' ConfigMaps
+#   or Docker secrets.
+# Spring Vault also requires extra userVault for each type of secret
+#    that we want to use in our application. The following sections describe
+#   how we can add support to two common secret types: key/value and database
+#   credentials.
+# https://www.baeldung.com/spring-cloud-vault
+
+# #####################################################
+# ############### SECURITY ############################
+# #####################################################
+
+spring.cloud.vault.uri = https://localhost:8200
+spring.cloud.vault.ssl.trust-store = classpath:/vault.jks
+spring.cloud.vault.ssl.trust-store-password = changeit
+
+# #####################################################
+# ############### GENERICS ############################
+# #####################################################
+
+# use the Generic Secret backend to access unversioned secrets stored as Key-Value pairs in Vault.
+spring.cloud.vault.generic.enabled: true
+spring.cloud.vault.generic.application-name: fakebank
+
+# We now can use all key/value pairs stored at secret/fakebank
+# as any other Environment property. The following snippet shows
+# how we can read the value of the foo key stored under this path:
+
+# @Autowired Environment env;
+# public String getFoo() {
+#    return env.getProperty("foo");
+# }
+
+# #####################################################
+# ############### DATABASE ############################
+# #####################################################
+
+# The Database backend module allows Spring applications to use dynamically
+# generated database credentials created by Vault.
+# Spring Vault injects those credentials under the
+# standard spring.datasource.username and spring.datasource.password
+# properties so they can be picked by regular DataSources.
+
+spring.cloud.vault.database.enqbled: true
+# During bootstrap, Spring will contact Vault and request that it creates new credentials with the
+# corresponding privileges.
+spring.cloud.vault.generic.role: fakebank-accounts-rw
+
+# DataSource Java Access: Connection c = datasource.getConnection();
