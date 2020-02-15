@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" th:href="@{/css/home.css}"/>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/admin/home.css}"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="shortcut icon" type="image/x-icon" href="img/icoNav.ico" />
+		<title>IziFoot</title>
+	</head>
+	<body>
+		<header id="home" class="masthead bodyBackgrounds">
+			<div id="homeContainer" class="container d-flex h-100 flex-column">
+				<div class="row rowBar">
+					<div class="col-md-2 col p-0">
+						<div class="well"><a th:href="@{/}">Accueil</a></div>
+					</div>
+					<div class="col-md-2 col p-0">
+						<div class="well">Actualité</div>
+					</div>
+					<div class="col-md-2 col p-0">
+						<div class="well">Organiser un tournoi</div>
+					</div>
+					<div class="col-md-2 col p-0">
+						<div class="well btn-danger">
+							<a th:href="@{/logout}">Logout</a>
+						</div>
+					</div>
+					<div class="col-md-2 col p-0">
+						<div class="well"></div>
+					</div>
+				</div>
+				<div class="row rowsHome">
+					<div class="col-md-8">
+						<div class="row h-50">
+							<div class="col-md-6 p-0">
+								<div class="well imageBackgrounds bBallInGoalLeft align-middle" id="newTournament">
+									<div class="title">Nouveau Tournoi</div>
+								</div>
+							</div>
+							<div class="col-md-6 p-0">
+								<div class="well d-flex justify-content-center" id="currentTournament">
+									<div class="title">Tournoi en cours...</div>
+								</div>
+							</div>
+						</div>
+						<div class="row h-50">
+							<div class="col-md-12 p-0">
+								<div class="well align-middle">
+									<p style="margin: 0 auto;">
+										<div class="panel-group" style="margin-top:40px">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<span th:utext="${userName}"></span>
+												</div>
+												<div class="panel-body">
+												</div>
+											</div>
+										</div>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="row h-50">
+								<div class="col-md-6 p-0">
+									<div class="well"><!--5--></div>
+								</div>
+								<div class="col-md-6 p-0">
+									<div class="well imageBackgrounds bRunningPlayer"><!--6--></div>
+								</div>
+							</div>
+							<div class="row h-50">
+								<div class="col-md-6 p-0">
+									<div class="well d-flex justify-content-center" id="playerStats">
+										<div class="title">Chercher un joueur (Statistiques)</div>
+									</div>
+								</div>
+								<div class="col-md-6 p-0">
+									<div class="well d-flex justify-content-center"  id="teams">
+										<div class="title">Gérer les équipes</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="row h-50">
+								<div class="col-md-6 p-0">
+									<div class="well"><!-- --></div>
+								</div>
+								<div class="col-md-6 p-0">
+									<div class="well"></div>
+								</div>
+							</div>
+							<div class="row h-50">
+								<div class="col-md-12 p-0">
+									<div class="well"><!--11--></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 p-0" id="loginContent">
+						<div class="well imageBackgrounds bNeymar" id="login">
+							Mode Match - Live
+						</div>
+					</div>
+				</div>
+				<div class="row rowBar">
+					<div class="col-md-12 p-0">
+					</div>
+				</div>
+    			<div class="flex-grow-1"></div>
+			</div>
+		</header>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/home.js"></script>
+	</body>
+</html>
