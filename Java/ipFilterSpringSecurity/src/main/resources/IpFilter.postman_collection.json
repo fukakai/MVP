@@ -1,0 +1,181 @@
+{
+    "info": {
+        "_postman_id": "dd496aac-d511-4325-a935-2bdb3f71fd9e",
+        "name": "IpFilter",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "http://{{customLocalIpAdress}}:8080/ipTest",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+                        "exec": [
+                            "pm.test(\"status code is 401\",function(){",
+                            "    pm.response.to.have.status(401);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://{{customLocalIpAdress}}:8080/ipTest",
+                    "protocol": "http",
+                    "host": [
+                        "{{customLocalIpAdress}}"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "ipTest"
+                    ]
+                },
+                "description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:8080/ipTest",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+                        "exec": [
+                            "pm.test(\"status code is 200\",function(){",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8080/ipTest",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "ipTest"
+                    ]
+                },
+                "description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+            },
+            "response": []
+        },
+        {
+            "name": "http://127.0.0.1:8080/ipTest",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+                        "exec": [
+                            "pm.test(\"status code is 200\",function(){",
+                            "    pm.response.to.have.status(200);",
+                            "});"
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8080/ipTest",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "ipTest"
+                    ]
+                },
+                "description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+            },
+            "response": []
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "a36dde4b-cc4b-40be-b95f-0bfcb10826a8",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "c60702d5-8f41-4ebd-90ad-870f593a4619",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "id": "6fd2b658-a4c8-47f4-8767-dc1842728c48",
+            "key": "customLocalIpAdress",
+            "value": "192.168.0.1",
+            "type": "string"
+        }
+    ],
+    "protocolProfileBehavior": {}
+}
