@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "36595c14-f164-4de3-81aa-d1fd6ab0562f",
+		"name": "ipFilterByPathPatterns",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{customLocalIpAdress}}:8080/publiccontroller",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+						"exec": [
+							"pm.test(\"status code is 401\",function(){",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{customLocalIpAdress}}:8080/publiccontroller",
+					"protocol": "http",
+					"host": [
+						"{{customLocalIpAdress}}"
+					],
+					"port": "8080",
+					"path": [
+						"publiccontroller"
+					]
+				},
+				"description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{customLocalIpAdress}}:8080/securedcontroller/securedroute",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+						"exec": [
+							"pm.test(\"status code is 401\",function(){",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{customLocalIpAdress}}:8080/securedcontroller/securedroute",
+					"protocol": "http",
+					"host": [
+						"{{customLocalIpAdress}}"
+					],
+					"port": "8080",
+					"path": [
+						"securedcontroller",
+						"securedroute"
+					]
+				},
+				"description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{customLocalIpAdress}}:8080/securedcontroller/publicroute",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+						"exec": [
+							"pm.test(\"status code is 401\",function(){",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{customLocalIpAdress}}:8080/securedcontroller/publicroute",
+					"protocol": "http",
+					"host": [
+						"{{customLocalIpAdress}}"
+					],
+					"port": "8080",
+					"path": [
+						"securedcontroller",
+						"publicroute"
+					]
+				},
+				"description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/publiccontroller",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+						"exec": [
+							"pm.test(\"status code is 200\",function(){",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/securedcontroller",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"securedcontroller"
+					]
+				},
+				"description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/securedcontroller",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+						"exec": [
+							"pm.test(\"status code is 200\",function(){",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/securedcontroller",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"securedcontroller"
+					]
+				},
+				"description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/securedcontroller/securedroute",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+						"exec": [
+							"pm.test(\"status code is 200\",function(){",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/securedcontroller/securedroute",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"securedcontroller",
+						"securedroute"
+					]
+				},
+				"description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/securedcontroller/publicroute",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c9b4886-a165-4414-9b7f-0a57e6f66897",
+						"exec": [
+							"pm.test(\"status code is 200\",function(){",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/securedcontroller/publicroute",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"securedcontroller",
+						"publicroute"
+					]
+				},
+				"description": "Should Return True if GETTING  blog post from BullHubs on HubSpot is possible"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "95f99a28-244c-42af-8218-b79060656073",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "855dbc2c-14ed-4142-9756-6776578933cd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "7cbe280c-0273-40d1-b637-e9f0c91eded3",
+			"key": "customLocalIpAdress",
+			"value": "172.18.112.209",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
