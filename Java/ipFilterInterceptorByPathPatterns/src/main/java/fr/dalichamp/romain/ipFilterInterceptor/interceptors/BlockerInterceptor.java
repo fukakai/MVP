@@ -1,6 +1,5 @@
 package fr.dalichamp.romain.ipFilterInterceptor.interceptors;
 
-import fr.dalichamp.romain.ipFilterInterceptor.utils.Utils;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
@@ -18,34 +17,24 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Log4j2
 @Component
-public class IpAddressInterceptor implements HandlerInterceptor {
+public class BlockerInterceptor implements HandlerInterceptor {
 
-    private final Set<String> whitelist = new HashSet<>();
-    private final String unauthorizedIpAddressMessage = "CONNECTION REFUSED: Unauthorized IP address: ";
-
-    public IpAddressInterceptor() {
-        whitelist.add("0:0:0:0:0:0:0:1"); // Localhost
-        whitelist.add("127.0.0.1"); // Local adresse
-
-        //request.getServerName(); -- litteral "localhost" name maybe implemented in the future
-    }
+    private final Set<String> whitelist = new HashSet<>(); // Stay Empty
+    private final String forbiddenAccessMessage = "CONNECTION REFUSED: Access is forbidden";
 
     @Override
     public boolean preHandle(
             HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
-        String ipAddress = request.getRemoteAddr();
 
-        if (!isAuthorizedIpAdress(ipAddress)) {
-            log.error(unauthorizedIpAddressMessage + ipAddress);
-            setUnauthorizedHttpServletResponse(response, unauthorizedIpAddressMessage + ipAddress);
-            return false;
-        }
-        return true;
+        // Access is always forbidden to everybody
+        log.error(forbiddenAccessMessage);
+        setUnauthorizedHttpServletResponse(response, forbiddenAccessMessage);
+        return false;
     }
 
     /**
-     * Set the response with a 401 Unauthorized message
+     * Set the response with a 403 Forbidden message
      *
      * @param response
      * @param message
@@ -53,23 +42,10 @@ public class IpAddressInterceptor implements HandlerInterceptor {
      */
     public void setUnauthorizedHttpServletResponse(HttpServletResponse response, String message)
             throws IOException {
-        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        response.setStatus(HttpServletResponse.SC_FORBIDDEN);
         response.getWriter().write(message);
         response.getWriter().flush();
         response.getWriter().close();
-    }
-
-    /**
-     * Check if the IP adress is in the authorized whitelist
-     *
-     * @param ipAddress
-     * @return
-     */
-    public boolean isAuthorizedIpAdress(String ipAddress) {
-        if (Utils.isElementInSetList(whitelist, ipAddress)) {
-            return true;
-        }
-        return false;
     }
 
     @Override

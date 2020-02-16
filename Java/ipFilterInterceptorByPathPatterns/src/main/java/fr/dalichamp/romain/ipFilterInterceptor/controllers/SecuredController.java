@@ -16,13 +16,13 @@ public class SecuredController {
 
     @GetMapping("/securedroute")
     public String securedroute() {
-        log.debug("Your Ip is Authorized to access");
-        return "Your Ip is Authorized to access";
+        log.info("Your Ip is Authorized to access");
+        return "Your Ip is Authorized to access !";
     }
 
     @GetMapping("/publicroute")
     public String publicroute() {
-        log.debug("Your Ip is Authorized to access");
-        return "Your Ip is Authorized to access";
+        log.info("Your Ip is Authorized to access");
+        return "Your Ip is Authorized to access !";
     }
 }

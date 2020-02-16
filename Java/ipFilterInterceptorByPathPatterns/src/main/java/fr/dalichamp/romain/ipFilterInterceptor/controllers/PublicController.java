@@ -14,7 +14,7 @@ public class PublicController {
 
     @GetMapping("/publiccontroller")
     public String publiccontroller() {
-        log.debug("Your Ip is Authorized to access");
+        log.info("Your Ip is Authorized to access");
         return "Your Ip is Authorized to access";
     }
 }
