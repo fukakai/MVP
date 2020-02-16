@@ -35,7 +35,7 @@ public class interceptorsConfiguration implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        // Block all the access for all ips to all the routes
+        // Block access for all ips to all the routes except for the secured one
         registry.addInterceptor(blockerInterceptor)
                 .addPathPatterns(applicationWebContextRoute)
                 .excludePathPatterns(securedRoutesList);
